@@ -166,7 +166,33 @@ plot_data_and_fit(time, data, best_func, best_params)
 ## Sample 2
 
 ```python
+filename = 'data.csv'
+time, data = read_data(filename)
 
+# Select column 3 from 'data.csv' (var3)
+var3 = data[:, 2]
+best_func, best_params, cov_matrix = fit_time_series(time, var3)
+
+print("Best-fitting function:", best_func.__name__)
+print("Optimal parameters:", best_params)
+print("Covariance matrix:", cov_matrix)
+
+predicted_data = best_func(time, *best_params)
+
+bias = calculate_bias(var3, predicted_data)
+rmse = calculate_rmse(var3, predicted_data)
+scatter_index = calculate_scatter_index(var3, predicted_data)
+r_squared = calculate_r_squared(var3, predicted_data)
+
+print("Bias:", bias)
+print("RMSE:", rmse)
+print("Scatter Index:", scatter_index)
+print("R-squared:", r_squared)
+
+plot_data_and_fit(time, var3, best_func, best_params)
+
+equation_string = format_equation_with_coefficients(best_func, best_params)
+print(equation_string)
 ```
 
 <p align="center">
