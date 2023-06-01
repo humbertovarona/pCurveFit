@@ -82,7 +82,7 @@ from scipy.optimize import curve_fit
 >>
 > Returns: float value (RMSE value).
 
-5. **compute_scatter_index** Calculate the scatter index between the predicted values and the actual data.
+5. **compute_scatter_index** Compute the scatter index between the predicted values and the actual data.
 
 > Arguments:
 >
@@ -92,5 +92,14 @@ from scipy.optimize import curve_fit
 >>
 > Returns: float value (Scatter index value).
 
-6. 
+6. **compute_r_squared** Compute the coefficient of determination (R-squared) between the predicted values and the actual data.
 
+> Arguments:
+>
+>> `data`: Function for which to calculate the Jacobian.
+>>
+>> `predicted`: Array of predicted values.
+>>
+> Returns: float value (R-squared value).
+
+7. 
