@@ -72,7 +72,7 @@ from scipy.optimize import curve_fit
 >>
 > Returns: float value (Bias value).
 
-4. **compute_rmse** Calculate the Root Mean Squared Error (RMSE) between the predicted values and the actual data.
+4. **compute_rmse** Compute the Root Mean Squared Error (RMSE) between the predicted values and the actual data.
 
 > Arguments:
 >
@@ -82,4 +82,15 @@ from scipy.optimize import curve_fit
 >>
 > Returns: float value (RMSE value).
 
+5. **compute_scatter_index** Calculate the scatter index between the predicted values and the actual data.
+
+> Arguments:
+>
+>> `data`: Function for which to calculate the Jacobian.
+>>
+>> `predicted`: Array of predicted values.
+>>
+> Returns: float value (Scatter index value).
+
+6. 
 
