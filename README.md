@@ -37,3 +37,16 @@ import numpy as np
 import matplotlib.pyplot as plt
 from scipy.optimize import curve_fit
 ```
+
+# Functions list
+
+1. **fit_time_series** Fit a time series to the best-fitting mathematical equation
+
+> Arguments:
+>
+>> `time` (array): Array of time values.
+>>
+>> `data` (array): Array of corresponding data values.
+>>
+> Returns: The best-fitting function `best_func`, optimal parameters `best_params`, and covariance matrix `cov_matrix`.
+
