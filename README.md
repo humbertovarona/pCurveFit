@@ -116,4 +116,12 @@ from scipy.optimize import curve_fit
 >>
 > Returns: none.
 
-8. 
+8. **compute_r_squared** Compute the coefficient of determination (R-squared) between the predicted values and the actual data.
+
+> Arguments:
+>
+>> `filename`: Path to the data file (including filename).
+>>
+> Returns: Time values `time` and data values as numpy arrays `variables`.
+
+9. 
