@@ -50,7 +50,7 @@ from scipy.optimize import curve_fit
 >>
 > Returns: The best-fitting function `best_func`, optimal parameters `best_params`, and covariance matrix `cov_matrix`.
 
-2. **jacobian** Calculate the Jacobian matrix of a given function
+2. **jacobian** Compute the Jacobian matrix of a given function
 
 > Arguments:
 >
@@ -62,4 +62,16 @@ from scipy.optimize import curve_fit
 >>
 > Returns: array: Jacobian matrix `jac`.
 
-3. 
+3. **compute_bias** Compute the bias between the predicted values and the actual data.
+
+> Arguments:
+>
+>> `data`: Function for which to calculate the Jacobian.
+>>
+>> `predicted`: Array of predicted values.
+>>
+> Returns: float value (Bias value).
+
+4.
+
+
