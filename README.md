@@ -133,3 +133,42 @@ from scipy.optimize import curve_fit
 >> `best_params`: The optimal parameters.
 >>
 > Returns: `equation_with_coefficients`: The formatted equation with substituted coefficients (string).
+
+# Usage examples
+
+## Sample 1
+
+```python
+time = np.array([1, 1.5, 2, 3, 4, 5])
+data = np.array([1.5, 3, 8, 20, 48, 120])
+best_func, best_params, cov_matrix = fit_time_series(time, data)
+
+predicted_data = best_func(time, *best_params)
+
+bias = calculate_bias(data, predicted_data)
+rmse = calculate_rmse(data, predicted_data)
+scatter_index = calculate_scatter_index(data, predicted_data)
+r_squared = calculate_r_squared(data, predicted_data)
+
+print("Bias:", bias)
+print("RMSE:", rmse)
+print("Scatter Index:", scatter_index)
+print("R-squared:", r_squared)
+
+plot_data_and_fit(time, data, best_func, best_params)
+```
+
+<p align="center">
+<img src="/images/sample1.png" width="500">
+</p>
+
+
+## Sample 2
+
+```python
+
+```
+
+<p align="center">
+<img src="/images/sample2.png" width="500">
+</p>
