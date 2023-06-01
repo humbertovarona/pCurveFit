@@ -102,4 +102,18 @@ from scipy.optimize import curve_fit
 >>
 > Returns: float value (R-squared value).
 
-7. 
+7. **plot_data_and_fit** Plot the original data along with the best-fitting function.
+
+> Arguments:
+>
+>> `time`: Array of time values.
+>>
+>> `data`: Array of corresponding data values.
+>>
+>> `func`: The best-fitting function.
+>>
+>> `params`: The optimal parameters.
+>>
+> Returns: none.
+
+8. 
