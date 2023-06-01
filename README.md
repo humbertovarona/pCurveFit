@@ -116,7 +116,7 @@ from scipy.optimize import curve_fit
 >>
 > Returns: none.
 
-8. **compute_r_squared** Compute the coefficient of determination (R-squared) between the predicted values and the actual data.
+8. **read_data** Read the data from a file with columns separated by commas.
 
 > Arguments:
 >
@@ -124,4 +124,12 @@ from scipy.optimize import curve_fit
 >>
 > Returns: Time values `time` and data values as numpy arrays `variables`.
 
-9. 
+9. **format_equation_with_coefficients** Formats the best-fit equation with substituted coefficients as a string.
+
+> Arguments:
+>
+>> `best_func`: The best-fitting function.
+>>
+>> `best_params`: The optimal parameters.
+>>
+> Returns: `equation_with_coefficients`: The formatted equation with substituted coefficients (string).
