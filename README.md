@@ -8,7 +8,7 @@ Find the best function that fits a time series
 
 # Release date
 
-![](https://img.shields.io/badge/Release%20date-May%2C%2010%2C%202023-9cf)
+![](https://img.shields.io/badge/Release%20date-May%2C%2030%2C%202023-9cf)
 
 # License
 
