@@ -44,9 +44,22 @@ from scipy.optimize import curve_fit
 
 > Arguments:
 >
->> `time` (array): Array of time values.
+>> `time`: Array of time values.
 >>
->> `data` (array): Array of corresponding data values.
+>> `data`: Array of corresponding data values.
 >>
 > Returns: The best-fitting function `best_func`, optimal parameters `best_params`, and covariance matrix `cov_matrix`.
 
+2. **jacobian** Calculate the Jacobian matrix of a given function
+
+> Arguments:
+>
+>> `func`: Function for which to calculate the Jacobian.
+>>
+>> `x`: Array of input values.
+>>
+>> `params`: Additional parameters required by the function.
+>>
+> Returns: array: Jacobian matrix `jac`.
+
+3. 
