@@ -159,7 +159,7 @@ plot_data_and_fit(time, data, best_func, best_params)
 ```
 
 <p align="center">
-<img src="/images/sample1.png" width="500">
+<img src="/images/example1.png" width="500">
 </p>
 
 
@@ -170,5 +170,5 @@ plot_data_and_fit(time, data, best_func, best_params)
 ```
 
 <p align="center">
-<img src="/images/sample2.png" width="500">
+<img src="/images/example2.png" width="500">
 </p>
